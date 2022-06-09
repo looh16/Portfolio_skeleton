@@ -59,8 +59,12 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 52px;
+  display: flex;
+  align-items: center;
   color: #172b4d;
   padding-top: 50px;
+  margin-left: 22px;
+  padding-bottom: 70px;
 }
 
 .profession {
