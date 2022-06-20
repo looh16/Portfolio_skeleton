@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
     <title>Portifolio</title>
 </head>
 
@@ -28,7 +29,7 @@
                     </ul>
                 </nav>
 
-                <div id="hamburger">
+                <div id="hamburger" onclick="toggleHamburgerMenu(this)">
                     <div class="first_line"></div>
                     <div class="second_line"></div>
                     <div class="third_line"></div>
@@ -179,7 +180,7 @@
                 </div>
 
                 <div class="menu-languages">
-                    <button type="button" class="menu-button" onclick="showItens()">Languages <img
+                    <button  id="menu-btn" type="button" class="menu-button" onclick="showItens()">Languages <img
                             src="images/arrow.svg" alt="twitter" class="arrow"></button>
                     <div id="languages">
                         <ul class="programing-languages">
@@ -241,19 +242,6 @@
         </div>
 
     </main>
-
-    <script>
-
-        function showItens() {
-            var list = document.getElementById("languages");
-
-            if (list.style.display === "none") {
-                list.style.display = "block";
-            } else {
-                list.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 
