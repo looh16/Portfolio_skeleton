@@ -42,7 +42,8 @@ a {
 }
 
 .nav-branding {
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
   width: 76px;
   height: 20px;
   font-style: normal;
@@ -68,6 +69,11 @@ a {
 
 .bar {
   display: block;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  border: 2px solid #67798e;
   width: 25px;
   height: 3px;
   margin: 5px auto;
@@ -591,6 +597,8 @@ input {
   .hamburger {
     display: block;
     color: #396df2;
+    margin-top: 20px;
+    margin-right: 15px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -599,12 +607,12 @@ input {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(11px) rotate(45deg);
     background-color: #fff;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
     background-color: #fff;
   }
 
@@ -619,7 +627,7 @@ input {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5px;
+    top: 0;
     gap: 0;
     flex-direction: column;
     background: #6070ff;
@@ -664,5 +672,6 @@ input {
     color: #fff;
     align-self: flex-start;
     display: block;
+    backdrop-filter: blur(8px);
   }
 }
