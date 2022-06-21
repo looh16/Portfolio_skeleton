@@ -15,23 +15,29 @@
     <main class="main-content">
 
         <!-- Header -->
-        <header class="header">
+        <header>
 
-            <div class="menu-container">
-                <div class="logo"><a href="#top">My Logo</a></div>
-
-                <nav  class="menu">
-                    <ul>
-                        <li>Portoflio</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-
-                <input type="checkbox" id="checkbox_toggle"/>
-                <label for="checkbox_toggle" class="toggle"><img src="images/Union.svg" alt="Menu Icon"></label>
-
-            </div>
+            <nav class="navbar">
+                <a href="#" class="nav-branding">My Logo</a>
+    
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Portoflio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-form" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
+            </nav>
 
             <!-- HEADLINE -->
             <section class="headline">
@@ -143,7 +149,7 @@
 
             </section>
 
-            <section class="about-my-self">
+            <section class="about-my-self" id="about">
                 <div class="myself">
                     <h3>About<br> Myself</h3>
 
@@ -171,7 +177,7 @@
                 </div>
 
                 <div class="menu-languages">
-                    <button type="button" class="menu-button" onclick="showItens()">Languages <img
+                    <button  id="menu-btn" type="button" class="menu-button" onclick="showItens()">Languages <img
                             src="images/arrow.svg" alt="twitter" class="arrow"></button>
                     <div id="languages">
                         <ul class="programing-languages">
@@ -187,7 +193,7 @@
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact-form">
                <div class="contact-me">
                     <h2>Contact me</h2>
                 
@@ -233,20 +239,7 @@
         </div>
 
     </main>
-
-    <script>
-
-        function showItens() {
-            var list = document.getElementById("languages");
-
-            if (list.style.display === "none") {
-                list.style.display = "block";
-            } else {
-                list.style.display = "none";
-            }
-        }
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
