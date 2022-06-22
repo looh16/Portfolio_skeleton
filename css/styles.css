@@ -539,7 +539,6 @@ input {
   .about-my-self {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
   }
 
   .about-my-self p {
