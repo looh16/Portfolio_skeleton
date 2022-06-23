@@ -205,13 +205,12 @@ form li {
 
 .cards > div {
   padding: 1rem;
-  margin: 10px;
+  margin: 55px;
   display: flex;
   flex-direction: row;
   border: 1px solid #fff;
-  justify-self: center;
-  align-self: center;
   overflow-x: hidden;
+  justify-content: space-between;
 }
 
 .card-tonic {
@@ -503,6 +502,69 @@ input {
   background: #0d151e;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  width: fit-content;
+}
+
+.detail-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.detail-description p {
+  width: 778px;
+  height: 382px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+  margin-top: 40vh;
+}
+
+.modal-box img {
+  position: absolute;
+  width: fit-content;
+  height: 20rem;
+  border-radius: 8px;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
 
 /* MEDIA QUERIES */
