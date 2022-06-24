@@ -516,19 +516,20 @@ input {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .modal-box {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  margin-left: 100px;
+  margin-right: 120px;
+  margin-top: 20px;
   bottom: 0;
   background: #fff;
   border: 1px solid #ebecf0;
   display: grid;
   grid-template-columns: auto;
-  margin: 5rem;
+  grid-template-rows: 55px 350px 400px;
+  grid-gap: 0;
 }
 
 .modal-box > div {
@@ -538,23 +539,24 @@ input {
   justify-content: space-between;
   display: flex;
   overflow: hidden;
-  height: max-content;
 }
 
 .detail-top {
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .detail-img p {
   align-self: flex-start;
-  margin: 0;
+  margin-left: 20px;
 }
 
 #img-detail {
   margin-top: 2rem;
-  width: 97%;
-  height: 80%;
+  margin-left: 20px;
+  width: 75%;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -568,8 +570,7 @@ input {
   display: flex;
   background: #fff;
   border: 1px solid #ebecf0;
-  margin-top: 55vh;
-  margin-bottom: 0;
+  margin-top: 4rem;
 }
 
 #details {
@@ -580,7 +581,8 @@ input {
   font-size: 16px;
   line-height: 30px;
   color: #344563;
-  margin-top: 75px;
+  margin-top: 8rem;
+  margin-left: 20px;
 }
 
 .details-contaner {
@@ -610,23 +612,27 @@ input {
 }
 
 .list-menu-one ul li {
+  margin-top: 3.5rem;
   align-items: center;
-  padding: 9px 19px;
+  padding: 14px;
+  margin-right: 5px;
   width: 65px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
-  margin: 5px;
+  color: #6070ff;
 }
 
 .list-menu-two ul li {
   align-items: center;
-  padding: 9px 19px;
+  padding: 14px 19px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   width: 65px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
-  margin: 5px;
+  color: #6070ff;
 }
 
 .button-detail {
@@ -646,13 +652,13 @@ input {
 }
 
 #img-source {
-  width: 15px;
+  width: 10px;
   height: auto;
   margin: 5px;
 }
 
 #img-live {
-  width: 15px;
+  width: 10px;
   height: auto;
   margin: 5px;
 }
@@ -816,69 +822,82 @@ input {
     backdrop-filter: blur(8px);
   }
 
-  .modal {
-    padding-right: 25px;
-    padding-bottom: 90px;
-  }
-
   .modal-box {
-    grid-template-rows: 55px 300px 360px;
+    margin-left: 5px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 10rem;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 60px 300px 500px;
     grid-gap: 0;
-    max-width: 100%;
-    margin-left: 14px;
-    margin-right: 62px;
-    margin-top: 66px;
   }
 
   .detail-img {
-    margin-bottom: 1rem;
+    display: flex;
+  }
+
+  .detail-img p {
+    align-self: flex-start;
+    margin-left: 20px;
   }
 
   #img-detail {
     margin-top: 2rem;
-    width: fit-content;
+    margin-left: 10px;
+    width: 65%;
     height: 30%;
-    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .detail-description {
+    display: flex;
     flex-direction: column;
+    background: #fff;
+    border: 1px solid #ebecf0;
     margin-top: 0;
-    height: 50vmax;
   }
 
   #details {
-    width: 311px;
-    height: 220px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #344563;
     margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+    width: 290px;
+    word-wrap: break-word;
+  }
+
+  .btn-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 10px;
   }
 
   .list-menu-one {
-    margin-top: 1rem;
+    margin-top: 0;
+    display: flex;
   }
 
   .list-menu-two {
     display: none;
   }
 
-  .list-menu-one ul li {
-    padding: 4px 12px;
-    min-width: fit-content;
-    height: 20px;
-    background: #ebebff;
-    border-radius: 8px;
+  .list-menu-one ul {
     display: inline-flex;
-    color: #6070ff;
+    margin-bottom: 10px;
   }
 
-  .btn-details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+  .list-menu-one ul li {
+    margin-top: 0;
+    align-items: center;
+    margin-right: 5px;
+    width: 65px;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+    color: #6070ff;
   }
 }
