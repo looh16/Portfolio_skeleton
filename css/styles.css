@@ -823,4 +823,68 @@ input {
     display: block;
     backdrop-filter: blur(8px);
   }
+
+  .modal-box {
+    position: fixed;
+    overflow-y: scroll;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+
+  #img-detail {
+    margin-top: 2rem;
+    width: 85%;
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .detail-description {
+    margin-top: 10rem;
+    flex-direction: column;
+  }
+
+  .detail-description p {
+    width: 400px;
+    font-weight: 20;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+
+  .list-menu-one {
+    margin-top: 1rem;
+  }
+
+  .list-menu-two {
+    margin-top: 1rem;
+  }
+
+  .list-menu-one ul li {
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    width: 10px;
+    height: 3px;
+    background: #ebebff;
+    border-radius: 8px;
+    margin: 2px;
+  }
+
+  .list-menu-two ul li {
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    width: 10px;
+    height: 3px;
+    background: #ebebff;
+    border-radius: 8px;
+    margin: 2px;
+  }
 }
