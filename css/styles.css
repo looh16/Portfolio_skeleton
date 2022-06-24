@@ -564,7 +564,7 @@ input {
   display: flex;
   background: #fff;
   border: 1px solid #ebecf0;
-  margin-top: 50vh;
+  margin-top: 55vh;
   margin-bottom: 0;
 }
 
@@ -842,7 +842,6 @@ input {
   }
 
   .detail-description {
-    margin-top: 10rem;
     flex-direction: column;
   }
 
