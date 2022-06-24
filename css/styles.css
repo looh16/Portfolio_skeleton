@@ -843,6 +843,7 @@ input {
 
   .detail-description {
     flex-direction: column;
+    margin-top: 15rem;
   }
 
   .detail-description p {
