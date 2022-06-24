@@ -1,6 +1,6 @@
 const parentDir = './images/';
 const btnSourceImage = `${parentDir}git.png`;
-const btnLiveImage = `${parentDir}elp.jpg`;
+const btnLiveImage = `${parentDir}live.jpg`;
 
 const cardsProject = [
   {
@@ -77,7 +77,7 @@ cardsProject.forEach((card) => {
 
             <div class="detail-description">
                   <div>
-                    <p>
+                    <p id="details">
                         ${card.details}
                     </p>
                   </div>
@@ -97,12 +97,11 @@ cardsProject.forEach((card) => {
                     </ul>
            
                     </div>
-                   
                     <div class="btn-details">
                     <button type="button" class="button-detail" onclick="location.href='https://looh16.github.io/portfolio.github.io/';">See live<img id="img-live" src="${btnLiveImage}" alt="${card.imageAlt
-}"></button>
+                    }"></button>
                         <button type="button" class="button-detail" onclick="location.href='https://github.com/looh16/Portfolio';">See Source<img id="img-source" src="${btnSourceImage}" alt="${card.imageAlt
-}"></button>
+                    }"></button>
                     </div>
                   
                   </div>
@@ -121,7 +120,13 @@ const closeButton = document.querySelector('.close-button');
 function toggleModal(cardId) {
   const card = cardsProject.filter((x) => x.id === cardId);
   const image = document.getElementById('img-detail');
-  if (card.length > 0) { image.src = card[0].featuredImage; }
+  const detail = document.getElementById('details');
+  const modalBlur = document.getElementsByClassName("modal");
+
+  if (card.length > 0) { 
+    image.src = card[0].featuredImage; 
+     detail.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+   }
 
   modal.classList.toggle('show-modal');
 }
