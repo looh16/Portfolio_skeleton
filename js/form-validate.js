@@ -5,3 +5,5 @@ function lowerCase() {
 }
 email.addEventListener('keyup', lowerCase);
 document.addEventListener('click', formSubmit);
+
+document.addEventListener('click', storeDataInLocalStorage);
