@@ -18,13 +18,16 @@ button.addEventListener('click', (event) => {
   event.preventDefault();
 
   if (validateLowerCaseEmail(email.value)) {
+    return true;
     text.innerText = '';
   } else {
     text.innerText = 'Please the email must be in lowercase';
+    return false;
   }
 
   if (!validateEmail(email.value)) {
     text.innerText = 'Please provide a valid email address';
+    return false;
   }
 
   email.value = " ";
