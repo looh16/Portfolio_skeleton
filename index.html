@@ -134,13 +134,14 @@
                 </div>
 
                 <div class="form-information">
-                    <form>
+                    <form  name="contact-form" action="#" method="post">
                         <ul>
                             <li>
                                 <input type="text" id="name" placeholder="Write your name here" name="user_name">
                             </li>
                             <li>
                                 <input type="email" id="mail" name="user_email" placeholder="Write your email here">
+                                <p id="message"></p>
                             </li>
                             <li>
                                 <textarea id="msg" name="user_message" placeholder="Write your message here"
@@ -149,7 +150,7 @@
                             <li class="button-shape">
                                 <ul>
                                     <li class="button-form">
-                                        <button type="button" class="get-touch">Get It Touch</button>
+                                        <button id="btn-get-touch" type="submit" name="submit" class="get-touch">Get It Touch</button>
                                     </li>
                                     <li>
                                         <img src="images/Ellipse.png" alt="image" class="img">
@@ -171,6 +172,7 @@
     </main>
     <script src="js/main.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/form-validate.js"></script>
 </body>
 
 </html>

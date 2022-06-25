@@ -685,6 +685,10 @@ input {
   backdrop-filter: blur(8px);
 }
 
+#message {
+  color: rgb(232, 16, 16);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .main-content {
