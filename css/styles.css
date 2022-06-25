@@ -557,9 +557,9 @@ input {
   margin-left: 20px;
   width: 75%;
   height: 500px;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -574,7 +574,6 @@ input {
 }
 
 #details {
-  width: 778px;
   height: fit-content;
   font-style: normal;
   font-weight: 300;
