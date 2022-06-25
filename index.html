@@ -134,22 +134,23 @@
                 </div>
 
                 <div class="form-information">
-                    <form>
+                    <form  name="contact-form" action="https://formspree.io/f/xvolnbvl" method="post" onsubmit="formSubmit()">
                         <ul>
                             <li>
-                                <input type="text" id="name" placeholder="Write your name here" name="user_name">
+                                <input type="text" id="name" placeholder="Write your name here" name="user_name" required minlength="5">
                             </li>
                             <li>
-                                <input type="email" id="mail" name="user_email" placeholder="Write your email here">
+                                <input type="email" id="mail" name="user_email" placeholder="Write your email here" required="true">
                             </li>
                             <li>
                                 <textarea id="msg" name="user_message" placeholder="Write your message here"
-                                    class="input-area" rows="7" cols="35"></textarea>
+                                    class="input-area" rows="7" cols="35" required></textarea>
                             </li>
                             <li class="button-shape">
                                 <ul>
                                     <li class="button-form">
-                                        <button type="button" class="get-touch">Get It Touch</button>
+                                        <p id="message"></p>
+                                        <button id="btn-get-touch" type="submit" name="submit" class="get-touch">Get It Touch</button>
                                     </li>
                                     <li>
                                         <img src="images/Ellipse.png" alt="image" class="img">
@@ -171,6 +172,7 @@
     </main>
     <script src="js/main.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/form-validate.js"></script>
 </body>
 
 </html>
