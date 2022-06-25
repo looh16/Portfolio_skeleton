@@ -134,17 +134,17 @@
                 </div>
 
                 <div class="form-information">
-                    <form  name="contact-form" action="https://formspree.io/f/xvolnbvl" method="post">
+                    <form  name="contact-form" action="https://formspree.io/f/xvolnbvl" method="post" onsubmit="formSubmit()">
                         <ul>
                             <li>
-                                <input type="text" id="name" placeholder="Write your name here" name="user_name">
+                                <input type="text" id="name" placeholder="Write your name here" name="user_name" required minlength="5">
                             </li>
                             <li>
-                                <input type="email" id="mail" name="user_email" placeholder="Write your email here">
+                                <input type="email" id="mail" name="user_email" placeholder="Write your email here" required="true">
                             </li>
                             <li>
                                 <textarea id="msg" name="user_message" placeholder="Write your message here"
-                                    class="input-area" rows="7" cols="35"></textarea>
+                                    class="input-area" rows="7" cols="35" required></textarea>
                             </li>
                             <li class="button-shape">
                                 <ul>
