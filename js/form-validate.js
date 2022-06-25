@@ -37,4 +37,7 @@ userName.value = localStorage.getItem("name");
 userEmail.value = localStorage.getItem("mail");
 userMessage.value = localStorage.getItem("message");
 
+email.addEventListener('keyup', lowerCase);
+document.addEventListener('click', formSubmit);
 
+document.addEventListener('click', storeDataInLocalStorage);
