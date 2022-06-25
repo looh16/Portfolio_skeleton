@@ -26,4 +26,6 @@ button.addEventListener('click', (event) => {
   if (!validateEmail(email.value)) {
     text.innerText = 'Please provide a valid email address';
   }
+
+  email.value = " ";
 });
